@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Belajar HTML</title>
+  </head>
+  <body>
+    <h1>Sharif's Fried Chicken</h1>
+
+    <div>
+      <h2>Menu</h2>
+      <a href="#alamat-rumah">Alamat rumah</a> <br />
+      <a href="#haiwan-peliharaan">Haiwan peliharaan</a>
+    </div>
+
+    <div>
+      <h2>Profil</h2>
+      <p>
+        Sharif's Fried Chicken (SFC) ditubuhkan pada
+        <strong>tahun 2020</strong> ketika waktu pandemik dan Sharif mengidam
+        makan <em>ayam goreng yang sedap</em>. Kerana terdesak, Sharif telah
+        mencipta resepi ayam goreng yang sedap yang diambil masa
+        <mark>3 hari tidak tidur malam</mark>. Kerana terlalu sedap, maka Sharif
+        membuat keputusan untuk menjualnya.
+      </p>
+    </div>
+
+    <!-- Senarai -->
+    <div>
+      <h2>Perisa Ayam Goreng Bestseller</h2>
+      <ol>
+        <li>Gochujang</li>
+        <li>Blackpepper</li>
+        <li>Keju & Mayo</li>
+      </ol>
+
+      <h2>Hidangan sampingan</h2>
+      <ul>
+        <li>Kentang goreng</li>
+        <li>Air mineral</li>
+      </ul>
+    </div>
+
+    <!-- Links -->
+    <div>
+      <h2>Media sosial</h2>
+      <p><a href="https://www.facebook.com" target="_blank">Facebook</a></p>
+      <p><a href="https://www.youtube.com" target="_blank">Youtube</a></p>
+    </div>
+
+    <!-- Image, video, embeds -->
+    <div>
+      <h2 id="haiwan-peliharaan">Maskot haiwan</h2>
+      <img height="200" src="assets/cat.png" alt="" />
+
+      <video height="200" controls>
+        <source src="assets/dog.mp4" type="video/mp4" />
+      </video>
+
+      <audio controls>
+        <source src="assets/audio.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+
+    <!-- Table -->
+    <div>
+      <h2>Senarai harga</h2>
+      <table border="1">
+        <tr>
+          <th>Menu</th>
+          <th>Perisa</th>
+          <th>Harga (RM)</th>
+        </tr>
+        <tr>
+          <td rowspan="3">Ayam</td>
+          <td>Gochujang</td>
+          <td rowspan="3">10</td>
+        </tr>
+        <tr>
+          <!-- <td>Ayam</td> -->
+          <td>Blackpepper</td>
+          <!-- <td>10</td> -->
+        </tr>
+        <tr>
+          <!-- <td>Ayam</td> -->
+          <td>Keju & Mayo</td>
+          <!-- <td>10</td> -->
+        </tr>
+        <tr>
+          <td colspan="2">Kentang goreng</td>
+          <!-- <td>Kentang</td> -->
+          <td>4</td>
+        </tr>
+        <tr>
+          <td colspan="2">Air mineral</td>
+          <!-- <td>Biasa</td> -->
+          <td>2</td>
+        </tr>
+      </table>
+    </div>
+
+    <div>
+      <h2>Video pembelian</h2>
+      <iframe
+        src="https://www.youtube.com/embed/E-mZMEQfg3c?si=uhAnLLvXuX_pJyet"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div>
+      <h2 id="alamat-rumah">Alamat</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.8191120167758!2d101.71681319999998!3d3.142407300000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc362fe7b7773f%3A0x385decd08d53c9b4!2sThe%20Exchange%20TRX!5e0!3m2!1sen!2smy!4v1728130747894!5m2!1sen!2smy"
+        width="300"
+        height="250"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <div>
+      <h2>Buat pembelian</h2>
+      <form action="/submit" method="post">
+        <div>
+          <label for="nama">Nama:</label>
+          <input type="text" name="nama" />
+        </div>
+
+        <div>
+          <label for="jantina">Jantina:</label>
+          <input type="text" name="jantina" />
+        </div>
+
+        <div>
+          <label for="makanan">Makanan:</label>
+          <select name="makanan" id="makanan">
+            <option value="" selected disabled>-- Sila pilih --</option>
+            <option value="1">Gochujang</option>
+            <option value="2">Blackpepper</option>
+            <option value="3">Keju & Mayo</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="tarikh">Tarikh penghantaran:</label>
+          <input type="date" name="tarikh" id="tarikh" />
+        </div>
+
+        <div>
+          <label for="mesej">Arahan penyediaan tambahan:</label>
+          <textarea name="mesej"></textarea>
+        </div>
+
+        <p>Cara hantar notifikasi</p>
+        <div>
+          <input type="checkbox" name="sms" id="sms" />
+          <label for="sms">SMS</label>
+        </div>
+        <div>
+          <input type="checkbox" name="emel" id="emel" />
+          <label for="emel">Emel</label>
+        </div>
+
+        <p>Cara penghantaran:</p>
+        <div>
+          <input type="radio" name="penghantaran" id="terus" />
+          <label for="terus">Penghantaran terus</label>
+        </div>
+
+        <div>
+          <input type="radio" name="penghantaran" id="pintu" />
+          <label for="pintu">Hadapan pintu</label>
+        </div>
+        <br />
+
+        <input type="submit" value="Hantar" />
+      </form>
+    </div>
+
+    <script src="email-form-handler.js"></script>
+  </body>
+</html>
