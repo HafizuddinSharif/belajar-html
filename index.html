@@ -128,7 +128,7 @@
       <form action="/submit" method="post">
         <div>
           <label for="nama">Nama:</label>
-          <input type="text" name="nama" />
+          <input type="text" name="nama" id="id" />
         </div>
 
         <div>
@@ -168,12 +168,12 @@
 
         <p>Cara penghantaran:</p>
         <div>
-          <input type="radio" name="penghantaran" id="terus" />
+          <input type="radio" name="penghantaran" value="terus" id="terus" />
           <label for="terus">Penghantaran terus</label>
         </div>
 
         <div>
-          <input type="radio" name="penghantaran" id="pintu" />
+          <input type="radio" name="penghantaran" value="pintu" id="pintu" />
           <label for="pintu">Hadapan pintu</label>
         </div>
         <br />
@@ -182,6 +182,6 @@
       </form>
     </div>
 
-    <script src="email-form-handler.js"></script>
+    <script src="form-handler.js"></script>
   </body>
 </html>
