@@ -1,121 +1,139 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Maklumat berkenaan website -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="assets/favicon.ico" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Belajar HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Masukkan semula baris di bawah ini utk gunakan CSS -->
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <title>Sharif Fried Chicken</title>
   </head>
+
   <body>
-    <h1>Sharif's Fried Chicken</h1>
+    <!-- Tajuk -->
+    <h1>Sharif Fried Chicken</h1>
 
     <div>
-      <h2>Menu</h2>
-      <a href="#alamat-rumah">Alamat rumah</a> <br />
-      <a href="#haiwan-peliharaan">Haiwan peliharaan</a>
+      <h2>Navbar</h2>
+      <a href="#perisa">Perisa</a>
     </div>
 
+    <!-- Profil -->
     <div>
       <h2>Profil</h2>
       <p>
-        Sharif's Fried Chicken (SFC) ditubuhkan pada
-        <strong>tahun 2020</strong> ketika waktu pandemik dan Sharif mengidam
-        makan <em>ayam goreng yang sedap</em>. Kerana terdesak, Sharif telah
-        mencipta resepi ayam goreng yang sedap yang diambil masa
-        <mark>3 hari tidak tidur malam</mark>. Kerana terlalu sedap, maka Sharif
-        membuat keputusan untuk menjualnya.
+        Sharif's Fried Chicken (SFC)
+        <em>ditubuhkan pada tahun 2020 ketika pandemik</em>, apabila Sharif
+        mengidam <strong>ayam goreng yang sedap</strong>. Dalam keadaan
+        terdesak, Sharif telah mencipta resepi ayam goreng yang enak, yang
+        <mark>mengambil masa 3 hari tanpa tidur</mark> untuk disempurnakan.
+        Kerana kelezatannya, Sharif membuat keputusan untuk menjualnya.
       </p>
     </div>
 
-    <!-- Senarai -->
-    <div>
-      <h2>Perisa Ayam Goreng Bestseller</h2>
+    <!-- Perisa bestseller -->
+    <div id="perisa">
+      <h2>Perisa bestseller</h2>
       <ol>
         <li>Gochujang</li>
-        <li>Blackpepper</li>
-        <li>Keju & Mayo</li>
+        <li>Sos BBQ</li>
+        <li>Asli</li>
       </ol>
+    </div>
 
+    <!-- Hidangan sampingan -->
+    <div>
       <h2>Hidangan sampingan</h2>
       <ul>
-        <li>Kentang goreng</li>
+        <li>Kentang goreng rangup</li>
         <li>Air mineral</li>
       </ul>
     </div>
 
-    <!-- Links -->
+    <!-- Menu -->
     <div>
-      <h2>Media sosial</h2>
-      <p><a href="https://www.facebook.com" target="_blank">Facebook</a></p>
-      <p><a href="https://www.youtube.com" target="_blank">Youtube</a></p>
-    </div>
+      <h2>Menu</h2>
 
-    <!-- Image, video, embeds -->
-    <div>
-      <h2 id="haiwan-peliharaan">Gambar Ayam Goreng</h2>
-      <img height="200" src="assets/ayam_goreng.jpg" alt="ayam goreng" />
+      <table border="5">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Perisa</th>
+            <th>Harga</th>
+          </tr>
+        </thead>
 
-      <video height="200" controls>
-        <source src="assets/goreng_ayam.mp4" type="video/mp4" />
-      </video>
+        <tbody>
+          <tr>
+            <td rowspan="3">Ayam goreng</td>
+            <td>Gochujang</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>Sos BBQ</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>Asli</td>
+            <td>6</td>
+          </tr>
 
-      <audio controls loop muted>
-        <source src="assets/suara_promo.mp3" type="audio/mp3" />
-      </audio>
-    </div>
+          <tr>
+            <td colspan="2">Kentang goreng</td>
+            <td>4</td>
+          </tr>
 
-    <!-- Table -->
-    <div>
-      <h2>Senarai harga</h2>
-      <table border="1">
-        <tr>
-          <th>Menu</th>
-          <th>Perisa</th>
-          <th>Harga (RM)</th>
-        </tr>
-        <tr>
-          <td rowspan="3">Ayam</td>
-          <td>Gochujang</td>
-          <td rowspan="3">10</td>
-        </tr>
-        <tr>
-          <!-- <td>Ayam</td> -->
-          <td>Blackpepper</td>
-          <!-- <td>10</td> -->
-        </tr>
-        <tr>
-          <!-- <td>Ayam</td> -->
-          <td>Keju & Mayo</td>
-          <!-- <td>10</td> -->
-        </tr>
-        <tr>
-          <td colspan="2">Kentang goreng</td>
-          <!-- <td>Kentang</td> -->
-          <td>4</td>
-        </tr>
-        <tr>
-          <td colspan="2">Air mineral</td>
-          <!-- <td>Biasa</td> -->
-          <td>2</td>
-        </tr>
+          <tr>
+            <td colspan="2">Air mineral</td>
+            <td>2</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <th colspan="2">Jumlah</th>
+            <td>28</td>
+          </tr>
+        </tfoot>
       </table>
     </div>
 
+    <!-- Galleri -->
     <div>
-      <h2>Video pembelian</h2>
+      <h2>Galleri</h2>
+
+      <h3>Gambar ayam goreng</h3>
+      <img
+        height="200"
+        src="./assets/ayam_goreng.jpg"
+        alt="Gambar ayam goreng yang lazat"
+      />
+
+      <h3>Video cara masakkan ayam goreng</h3>
+      <video height="200" controls>
+        <source src="./assets/goreng_ayam.mp4" type="video/mp4" />
+      </video>
+
+      <h3>Video promosi kedai</h3>
+      <audio controls loop>
+        <source src="./assets/suara_promo.mp3" type="audio/mp3" />
+      </audio>
+
+      <h3>Video pengasas</h3>
       <iframe
-        src="https://www.youtube.com/embed/E-mZMEQfg3c?si=uhAnLLvXuX_pJyet"
+        width="300"
+        src="https://www.youtube.com/embed/E-mZMEQfg3c?si=znhhUjpeu9bAlRJD"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen
       ></iframe>
-    </div>
 
-    <div>
-      <h2 id="alamat-rumah">Alamat</h2>
+      <h3>Alamat kedai</h3>
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.8191120167758!2d101.71681319999998!3d3.142407300000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc362fe7b7773f%3A0x385decd08d53c9b4!2sThe%20Exchange%20TRX!5e0!3m2!1sen!2smy!4v1728130747894!5m2!1sen!2smy"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.8191120167758!2d101.7168132!3d3.1424073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.w1!3m3!1m2!1s0x31cc362fe7b7773f%3A0x385decd08d53c9b4!2sThe%20Exchange%20TRX!5e0!3m2!1sen!2smy!4v1735455480358!5m2!1sen!2smy"
         width="300"
-        height="250"
         style="border: 0"
         allowfullscreen=""
         loading="lazy"
@@ -124,64 +142,72 @@
     </div>
 
     <div>
-      <h2>Buat pembelian</h2>
+      <h2>Order di sini</h2>
+
       <form action="/submit" method="post">
-        <div>
-          <label for="nama">Nama:</label>
-          <input type="text" name="nama" id="id" />
-        </div>
+        <label for="nama">Nama:</label>
+        <input type="text" name="nama" id="nama" />
+
+        <label for="tarikh">Tarikh penghantaran:</label>
+        <input type="date" name="tarikh" id="tarikh" />
+
+        <h3>Pilih makanan:</h3>
 
         <div>
-          <label for="jantina">Jantina:</label>
-          <input type="text" name="jantina" />
+          <input
+            type="checkbox"
+            name="makanan"
+            id="gochujang"
+            value="gochujang"
+          />
+          <label for="gochujang">Gochujang</label>
+
+          <input type="checkbox" name="makanan" id="sosbbq" value="sosbbq" />
+          <label for="sosbbq">Sos BBQ</label>
+
+          <input type="checkbox" name="makanan" id="asli" value="asli" />
+          <label for="asli">Asli</label>
+
+          <input type="checkbox" name="makanan" id="kentang" value="kentang" />
+          <label for="kentang">Kentang goreng</label>
+
+          <input type="checkbox" name="makanan" id="air" value="air" />
+          <label for="air">Air mineral</label>
         </div>
 
+        <h3>Cara hantar:</h3>
+
         <div>
-          <label for="makanan">Makanan:</label>
-          <select name="makanan" id="makanan">
-            <option value="" selected disabled>-- Sila pilih --</option>
-            <option value="1">Gochujang</option>
-            <option value="2">Blackpepper</option>
-            <option value="3">Keju & Mayo</option>
+          <input type="radio" name="penghantaran" id="rumah" value="rumah" />
+          <label for="rumah">Terus ke rumah</label>
+
+          <input type="radio" name="penghantaran" id="ambil" value="ambil" />
+          <label for="ambil">Ambil sendiri</label>
+        </div>
+
+        <h3>Komen tambahan:</h3>
+        <label for="komen">Komen</label>
+        <textarea name="komen" id="komen"></textarea>
+
+        <div>
+          <label for="bila">Bila nak start buat:</label>
+          <select name="bila" id="bila">
+            <option value="sekarang" selected>Sekarang</option>
+            <option value="30minit">30 minit nanti</option>
+            <option value="1jam">1 jam nanti</option>
           </select>
         </div>
-
-        <div>
-          <label for="tarikh">Tarikh penghantaran:</label>
-          <input type="date" name="tarikh" id="tarikh" />
-        </div>
-
-        <div>
-          <label for="mesej">Arahan penyediaan tambahan:</label>
-          <textarea name="mesej"></textarea>
-        </div>
-
-        <p>Cara hantar notifikasi</p>
-        <div>
-          <input type="checkbox" name="sms" id="sms" />
-          <label for="sms">SMS</label>
-        </div>
-        <div>
-          <input type="checkbox" name="emel" id="emel" />
-          <label for="emel">Emel</label>
-        </div>
-
-        <p>Cara penghantaran:</p>
-        <div>
-          <input type="radio" name="penghantaran" value="terus" id="terus" />
-          <label for="terus">Penghantaran terus</label>
-        </div>
-
-        <div>
-          <input type="radio" name="penghantaran" value="pintu" id="pintu" />
-          <label for="pintu">Hadapan pintu</label>
-        </div>
-        <br />
 
         <input type="submit" value="Hantar" />
       </form>
     </div>
 
-    <script src="form-handler.js"></script>
+    <!-- Media sosial -->
+    <div>
+      <h2>Media sosial</h2>
+      <a href="https://www.facebook.com" target="_blank">Facebook</a>
+    </div>
+
+    <script src="./form-handler.js"></script>
   </body>
 </html>

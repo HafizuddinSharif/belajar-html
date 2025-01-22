@@ -2,20 +2,21 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
   color: #333;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f4f4f4;
 }
 
 h1,
-h2 {
-  color: #2c3e50;
+h2,
+h3 {
+  color: #d9534f;
+  text-align: center;
 }
 
 a {
-  color: #3498db;
+  color: #0275d8;
   text-decoration: none;
 }
 
@@ -23,106 +24,115 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Navigation */
-nav {
-  background-color: #2c3e50;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-nav a {
-  color: white;
-  margin-right: 10px;
-}
-
-/* Sections */
 div {
-  background-color: white;
+  margin: 20px auto;
   padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-form div {
-  background-color: transparent;
-  box-shadow: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* Profile */
-.mark {
-  background-color: #f1c40f;
-  padding: 2px 5px;
-  border-radius: 3px;
-}
-
-/* Lists */
-ul,
-ol {
-  padding-left: 20px;
-}
-
-/* Table */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
-th,
-td {
+table th,
+table td {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
 }
 
-th {
+table th {
   background-color: #f2f2f2;
+  color: #333;
 }
 
-/* Image */
-img {
-  max-width: 100%;
-  height: auto;
+table tfoot th {
+  background-color: #d9534f;
+  color: white;
+}
+
+ol,
+ul {
+  padding-left: 40px;
+}
+
+img,
+video,
+iframe {
   display: block;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
-/* Form */
 form {
-  display: grid;
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
-label {
-  font-weight: bold;
+form label {
+  margin-top: 10px;
 }
 
-input[type="text"],
-select,
-textarea {
-  width: 100%;
-  padding: 8px;
+form input,
+form select,
+form textarea {
+  margin-top: 5px;
+  padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
-  margin-right: 5px;
-}
-
-input[type="submit"] {
-  background-color: #3498db;
+form input[type="submit"] {
+  background-color: #5cb85c;
   color: white;
   border: none;
-  padding: 10px 20px;
   cursor: pointer;
-  border-radius: 4px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  align-self: flex-start;
 }
 
-input[type="submit"]:hover {
-  background-color: #2980b9;
+form input[type="submit"]:hover {
+  background-color: #4cae4c;
+}
+
+mark {
+  background-color: #fcf8e3;
+}
+
+audio,
+video {
+  max-width: 100%;
+}
+
+iframe {
+  border: none;
+  max-width: 100%;
+}
+
+a[target="_blank"]:after {
+  content: " 🔗";
+}
+
+div#perisa {
+  background-color: #fef7f7;
+  border-left: 5px solid #d9534f;
+  padding-left: 15px;
+}
+
+/* Style to align checkboxes and labels in one line */
+form input[type="checkbox"] {
+  margin-right: 5px; /* Add space between checkbox and label */
+}
+
+form h3 + input[type="checkbox"],
+form h3 + label,
+form input[type="checkbox"] + label {
+  display: inline-block; /* Display checkboxes and labels inline */
+  margin-right: 15px; /* Add spacing between each checkbox and label pair */
 }
